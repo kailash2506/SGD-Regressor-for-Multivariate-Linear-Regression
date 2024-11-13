@@ -14,13 +14,12 @@ To write a program to predict the price of the house and number of occupants in 
 4. Predict on test data, inverse transform the results, and calculate the mean squared error.
 
 ## Program:
-```
+```python
 /*
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
 Developed by: Kailash Kumar S 
 RegisterNumber: 2122223220041 
 */
-```
 import numpy as np
 from sklearn.datasets import fetch_california_housing
 from sklearn.linear_model import SGDRegressor
@@ -47,6 +46,7 @@ Y_test=scaler_Y.inverse_transform(Y_test)
 mse=mean_squared_error(Y_test,Y_pred)
 print("Mean Square Error:",mse)
 print("\nPredictions:\n",Y_pred[:5])
+```
 
 ## Output:
 ![alt text](<ML EX 03.png>)
